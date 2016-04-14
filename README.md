@@ -1,4 +1,4 @@
-# 前言
+	# 前言
 
 该小项目主要是做 Kong 的一个代理。
 
@@ -15,6 +15,12 @@
 1. 首先安装好 oepnResty。
 2. 加入 [lua-resty-http](https://github.com/pintsized/lua-resty-http) 和 [lua-resty-template](https://github.com/bungle/lua-resty-template) 的支持。即把对应的 lua 文件加入到 /openresty/lualib/resty 中即可。
 3. 使用 conf 目录下的 nginx.conf ，即跑 nginx 的时候指定该文件。指定好目录，例如： `./nginx -p /Users/yunxin/githubProject/myPro/Kong-Admin -c /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf`
+
+图示：
+
+![KongAPI1](http://7xrzlm.com1.z0.glb.clouddn.com/kongapi.png?imageMogr2/thumbnail/!25p)
+
+![KongAPI1](http://7xrzlm.com1.z0.glb.clouddn.com/kongapi1.png?imageMogr2/thumbnail/!25p)
 
 # openResty
 
