@@ -1,0 +1,32 @@
+{(api/common/header.html)}
+    <div>
+        <h3>API列表</h3>
+        <table class = "table table-striped">
+            <thead>
+                <td>upstream_url</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>id</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>request_path</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>Operation1</td>
+                <td>Operation2</td>
+            </thead>
+            <tbody>
+                {% for _,item in pairs(items) do %}
+                <tr>
+                    <td>{{item.upstream_url}}</td>
+                    <td></td>
+                    <td>{{item.id}}</td>
+                    <td></td>
+                    <td>{{item.request_path}}</td>
+                    <td></td>
+                    <td><a href = "/api/update?id={{item.id}}&upstream_url={{item.upstream_url}}&request_path={{item.request_path}}">Update</a></td>
+                    <td><a href = "/api/delete?id={{item.id}}">Delete</a></td>
+
+                </tr>
+                {% end  %}
+            </tbody>
+        </table>
+    </div>
+{(api/common/footer.html)}

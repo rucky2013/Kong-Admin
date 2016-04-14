@@ -1,0 +1,495 @@
+2016/04/14 15:39:07 [alert] 20657#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 15:39:07 [emerg] 20657#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2016/04/14 15:39:21 [alert] 20675#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 15:39:21 [notice] 20675#0: using the "kqueue" event method
+2016/04/14 15:39:21 [notice] 20675#0: openresty/1.9.7.4
+2016/04/14 15:39:21 [notice] 20675#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 15:39:21 [notice] 20675#0: OS: Darwin 14.5.0
+2016/04/14 15:39:21 [notice] 20675#0: hw.ncpu: 8
+2016/04/14 15:39:21 [notice] 20675#0: net.inet.tcp.sendspace: 131072
+2016/04/14 15:39:21 [notice] 20675#0: kern.ipc.somaxconn: 128
+2016/04/14 15:39:21 [notice] 20675#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 15:39:21 [notice] 20676#0: start worker processes
+2016/04/14 15:39:21 [notice] 20676#0: start worker process 20677
+2016/04/14 16:11:27 [alert] 22956#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 16:11:27 [notice] 22956#0: using the "kqueue" event method
+2016/04/14 16:11:27 [notice] 22956#0: openresty/1.9.7.4
+2016/04/14 16:11:27 [notice] 22956#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 16:11:27 [notice] 22956#0: OS: Darwin 14.5.0
+2016/04/14 16:11:27 [notice] 22956#0: hw.ncpu: 8
+2016/04/14 16:11:27 [notice] 22956#0: net.inet.tcp.sendspace: 131072
+2016/04/14 16:11:27 [notice] 22956#0: kern.ipc.somaxconn: 128
+2016/04/14 16:11:27 [notice] 22956#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 16:11:27 [notice] 22957#0: start worker processes
+2016/04/14 16:11:27 [notice] 22957#0: start worker process 22958
+2016/04/14 16:35:15 [alert] 25110#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 16:35:15 [emerg] 25110#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2016/04/14 16:35:29 [alert] 25128#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 16:35:29 [notice] 25128#0: using the "kqueue" event method
+2016/04/14 16:35:29 [notice] 25128#0: openresty/1.9.7.4
+2016/04/14 16:35:29 [notice] 25128#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 16:35:29 [notice] 25128#0: OS: Darwin 14.5.0
+2016/04/14 16:35:29 [notice] 25128#0: hw.ncpu: 8
+2016/04/14 16:35:29 [notice] 25128#0: net.inet.tcp.sendspace: 131072
+2016/04/14 16:35:29 [notice] 25128#0: kern.ipc.somaxconn: 128
+2016/04/14 16:35:29 [notice] 25128#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 16:35:29 [notice] 25129#0: start worker processes
+2016/04/14 16:35:29 [notice] 25129#0: start worker process 25130
+2016/04/14 16:35:56 [error] 25130#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:35:56 [error] 25130#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *8 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *10 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *11 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *12 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *8 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *12 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *8 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *9 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *10 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *11 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *12 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *8 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *9 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *10 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *11 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *12 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:37:08 [error] 25130#0: *8 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:39:50 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:40:01 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost"
+2016/04/14 16:40:33 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost"
+2016/04/14 16:40:34 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost"
+2016/04/14 16:40:38 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:40:42 [error] 25130#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost"
+2016/04/14 16:51:29 [error] 25130#0: *19 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *21 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *22 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *23 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *19 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *24 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *19 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *21 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *22 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *23 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *24 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *19 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *21 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *22 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *23 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *24 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *19 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:29 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:51:35 [error] 25130#0: *20 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:55:27 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:55:31 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:31 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *30 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *29 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *28 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *27 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *26 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:43 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:55:47 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:56:12 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /static/stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:56:26 [error] 25130#0: *25 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /static/stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:58:41 [alert] 26833#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 16:58:41 [emerg] 26833#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2016/04/14 16:58:47 [alert] 26852#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 16:58:47 [notice] 26852#0: using the "kqueue" event method
+2016/04/14 16:58:47 [notice] 26852#0: openresty/1.9.7.4
+2016/04/14 16:58:47 [notice] 26852#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 16:58:47 [notice] 26852#0: OS: Darwin 14.5.0
+2016/04/14 16:58:47 [notice] 26852#0: hw.ncpu: 8
+2016/04/14 16:58:47 [notice] 26852#0: net.inet.tcp.sendspace: 131072
+2016/04/14 16:58:47 [notice] 26852#0: kern.ipc.somaxconn: 128
+2016/04/14 16:58:47 [notice] 26852#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 16:58:47 [notice] 26853#0: start worker processes
+2016/04/14 16:58:47 [notice] 26853#0: start worker process 26854
+2016/04/14 16:58:49 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /static/stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:58:51 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /static/stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost"
+2016/04/14 16:58:54 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:54 [error] 26854#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 16:58:59 [error] 26854#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost"
+2016/04/14 17:06:08 [error] 26854#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost"
+2016/04/14 17:06:34 [info] 26854#0: *8 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:06:34 [info] 26854#0: *9 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:06:34 [info] 26854#0: *10 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:06:34 [info] 26854#0: *11 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:06:34 [info] 26854#0: *12 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:06:34 [error] 26854#0: *7 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost"
+2016/04/14 17:08:57 [error] 26854#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *15 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *16 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *17 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *18 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *13 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:08:57 [error] 26854#0: *14 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:09:06 [emerg] 27459#0: getgrnam("root") failed in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:1
+2016/04/14 17:10:41 [alert] 27571#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:20
+2016/04/14 17:10:41 [emerg] 27571#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2016/04/14 17:10:41 [notice] 27571#0: try again to bind() after 500ms
+2016/04/14 17:10:41 [emerg] 27571#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2016/04/14 17:10:41 [notice] 27571#0: try again to bind() after 500ms
+2016/04/14 17:10:41 [emerg] 27571#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2016/04/14 17:10:41 [notice] 27571#0: try again to bind() after 500ms
+2016/04/14 17:10:41 [emerg] 27571#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2016/04/14 17:10:41 [notice] 27571#0: try again to bind() after 500ms
+2016/04/14 17:10:41 [emerg] 27571#0: bind() to 0.0.0.0:80 failed (48: Address already in use)
+2016/04/14 17:10:41 [notice] 27571#0: try again to bind() after 500ms
+2016/04/14 17:10:41 [emerg] 27571#0: still could not bind()
+2016/04/14 17:11:17 [alert] 27662#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:20
+2016/04/14 17:11:17 [notice] 27662#0: using the "kqueue" event method
+2016/04/14 17:11:17 [notice] 27662#0: openresty/1.9.7.4
+2016/04/14 17:11:17 [notice] 27662#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:11:17 [notice] 27662#0: OS: Darwin 14.5.0
+2016/04/14 17:11:17 [notice] 27662#0: hw.ncpu: 8
+2016/04/14 17:11:17 [notice] 27662#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:11:17 [notice] 27662#0: kern.ipc.somaxconn: 128
+2016/04/14 17:11:17 [notice] 27662#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:11:17 [notice] 27663#0: start worker processes
+2016/04/14 17:11:17 [notice] 27663#0: start worker process 27664
+2016/04/14 17:11:22 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:22 [error] 27664#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:11:27 [error] 27664#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost"
+2016/04/14 17:12:47 [emerg] 27870#0: getgrnam("root") failed in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:1
+2016/04/14 17:14:22 [alert] 28014#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 17:14:22 [notice] 28014#0: using the "kqueue" event method
+2016/04/14 17:14:22 [notice] 28014#0: openresty/1.9.7.4
+2016/04/14 17:14:22 [notice] 28014#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:14:22 [notice] 28014#0: OS: Darwin 14.5.0
+2016/04/14 17:14:22 [notice] 28014#0: hw.ncpu: 8
+2016/04/14 17:14:22 [notice] 28014#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:14:22 [notice] 28014#0: kern.ipc.somaxconn: 128
+2016/04/14 17:14:22 [notice] 28014#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:14:22 [notice] 28015#0: start worker processes
+2016/04/14 17:14:22 [notice] 28015#0: start worker process 28016
+2016/04/14 17:14:28 [error] 28016#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/bootstrap.min.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/style.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/animate.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/magnific-popup.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/colors/green.css/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/modernizr.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/smoothscroll.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/bootstrap.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.hoverIntent.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.nicescroll.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.debouncedresize.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/waypoints-sticky.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/retina.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *3 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/owl.carousel.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *4 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jflickrfeed.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *5 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/twitter/jquery.tweet.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *6 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/jquery.magnific-popup.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *1 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/mediaelement-and-player.min.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:28 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /javascripts/main.js/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:14:36 [error] 28016#0: *2 directory index of "/Users/yunxin/githubProject/myPro/Kong-Admin/static/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET /stylesheets/mediaelementplayer.css/ HTTP/1.1", host: "localhost"
+2016/04/14 17:17:51 [emerg] 28272#0: invalid number of arguments in "user" directive in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:2
+2016/04/14 17:22:45 [emerg] 28975#0: invalid number of arguments in "user" directive in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:2
+2016/04/14 17:22:56 [emerg] 28992#0: unknown directive "/*user" in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:2
+2016/04/14 17:23:14 [alert] 29054#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 17:23:14 [notice] 29054#0: using the "kqueue" event method
+2016/04/14 17:23:14 [notice] 29054#0: openresty/1.9.7.4
+2016/04/14 17:23:14 [notice] 29054#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:23:14 [notice] 29054#0: OS: Darwin 14.5.0
+2016/04/14 17:23:14 [notice] 29054#0: hw.ncpu: 8
+2016/04/14 17:23:14 [notice] 29054#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:23:14 [notice] 29054#0: kern.ipc.somaxconn: 128
+2016/04/14 17:23:14 [notice] 29054#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:23:14 [notice] 29055#0: start worker processes
+2016/04/14 17:23:14 [notice] 29055#0: start worker process 29056
+2016/04/14 17:34:55 [alert] 29807#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 17:34:55 [notice] 29807#0: using the "kqueue" event method
+2016/04/14 17:34:55 [notice] 29807#0: openresty/1.9.7.4
+2016/04/14 17:34:55 [notice] 29807#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:34:55 [notice] 29807#0: OS: Darwin 14.5.0
+2016/04/14 17:34:55 [notice] 29807#0: hw.ncpu: 8
+2016/04/14 17:34:55 [notice] 29807#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:34:55 [notice] 29807#0: kern.ipc.somaxconn: 128
+2016/04/14 17:34:55 [notice] 29807#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:34:55 [notice] 29808#0: start worker processes
+2016/04/14 17:34:55 [notice] 29808#0: start worker process 29809
+2016/04/14 17:35:31 [info] 29809#0: *2 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:35:31 [error] 29809#0: *2 kevent() reported that connect() failed (61: Connection refused), client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:35:31 [error] 29809#0: *2 [lua] api.lua:20: handleListApis(): request for get all apis http://localhost:8001/apis fail because of no res, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:36:43 [alert] 30087#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 17:36:43 [notice] 30087#0: using the "kqueue" event method
+2016/04/14 17:36:43 [notice] 30087#0: openresty/1.9.7.4
+2016/04/14 17:36:43 [notice] 30087#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:36:43 [notice] 30087#0: OS: Darwin 14.5.0
+2016/04/14 17:36:43 [notice] 30087#0: hw.ncpu: 8
+2016/04/14 17:36:43 [notice] 30087#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:36:43 [notice] 30087#0: kern.ipc.somaxconn: 128
+2016/04/14 17:36:43 [notice] 30087#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:36:43 [notice] 30088#0: start worker processes
+2016/04/14 17:36:43 [notice] 30088#0: start worker process 30089
+2016/04/14 17:36:54 [info] 30089#0: *1 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:36:54 [debug] 30089#0: *1 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:37:07 [info] 30089#0: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:37:07 [info] 30089#0: *3 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:37:07 [info] 30089#0: *4 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:37:07 [info] 30089#0: *5 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:37:07 [info] 30089#0: *6 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:38:07 [info] 30089#0: *8 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:38:07 [info] 30089#0: *9 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:38:07 [info] 30089#0: *10 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:38:07 [info] 30089#0: *11 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:38:07 [info] 30089#0: *12 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:40:06 [info] 30089#0: *14 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:40:06 [debug] 30089#0: *14 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:44:20 [alert] 30746#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/14 17:44:20 [notice] 30746#0: using the "kqueue" event method
+2016/04/14 17:44:20 [notice] 30746#0: openresty/1.9.7.4
+2016/04/14 17:44:20 [notice] 30746#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/14 17:44:20 [notice] 30746#0: OS: Darwin 14.5.0
+2016/04/14 17:44:20 [notice] 30746#0: hw.ncpu: 8
+2016/04/14 17:44:20 [notice] 30746#0: net.inet.tcp.sendspace: 131072
+2016/04/14 17:44:20 [notice] 30746#0: kern.ipc.somaxconn: 128
+2016/04/14 17:44:20 [notice] 30746#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/14 17:44:20 [notice] 30747#0: start worker processes
+2016/04/14 17:44:20 [notice] 30747#0: start worker process 30748
+2016/04/14 17:45:27 [info] 30748#0: *2 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:45:27 [info] 30748#0: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:45:27 [info] 30748#0: *4 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:45:27 [info] 30748#0: *5 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:45:27 [info] 30748#0: *6 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *7 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *8 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *9 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *10 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *11 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:46:34 [info] 30748#0: *12 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:48:58 [info] 30748#0: *13 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:48:58 [error] 30748#0: *13 kevent() reported that connect() failed (61: Connection refused), client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:48:58 [error] 30748#0: *13 [lua] api.lua:20: handleListApis(): request for get all apis http://localhost:8001/apis fail because of no res, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:48:58 [error] 30748#0: *13 lua entry thread aborted: runtime error: [string "context=... or {}..."]:9: attempt to index global 'res' (a nil value)
+stack traceback:
+coroutine 0:
+	[string "context=... or {}..."]: in main chunk
+	/opt/openresty/lualib/resty/template.lua:458: in function 'render'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:122: in function </Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:48:58 [error] 30748#0: *13 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:48:58 [error] 30748#0: *14 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:18 [info] 30748#0: *15 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:49:18 [info] 30748#0: *16 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:49:18 [info] 30748#0: *17 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:49:18 [info] 30748#0: *18 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/14 17:49:18 [info] 30748#0: *14 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/14 17:49:18 [debug] 30748#0: *14 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:21 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=e166bb9d-22a8-4fe1-cf18-7d6cf940c8ae HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:21 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+DELETE /apis/e166bb9d-22a8-4fe1-cf18-7d6cf940c8ae HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:21 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:21 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:22 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=91811329-63b7-4a2e-ca35-70a65d0ec21a HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:22 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+DELETE /apis/91811329-63b7-4a2e-ca35-70a65d0ec21a HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:22 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:22 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:24 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/update, client: 127.0.0.1, server: localhost, request: "GET /api/update?id=2693845b-16d0-4193-c1b5-e11532eb1e93&upstream_url=http://localhost:9991&request_path=/api/v1/uam/9991 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:27 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/do-add-api, client: 127.0.0.1, server: localhost, request: "POST /api/do-add-api HTTP/1.1", host: "localhost", referrer: "http://localhost/api/update?id=2693845b-16d0-4193-c1b5-e11532eb1e93&upstream_url=http://localhost:9991&request_path=/api/v1/uam/9991"
+2016/04/14 17:49:27 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+PATCH /apis/2693845b-16d0-4193-c1b5-e11532eb1e93 HTTP/1.1
+Content-Length: 64
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/14 17:49:27 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/update?id=2693845b-16d0-4193-c1b5-e11532eb1e93&upstream_url=http://localhost:9991&request_path=/api/v1/uam/9991"
+2016/04/14 17:49:27 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:31 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/add-api, client: 127.0.0.1, server: localhost, request: "GET /api/add-api HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/14 17:49:41 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/do-add-api, client: 127.0.0.1, server: localhost, request: "POST /api/do-add-api HTTP/1.1", host: "localhost", referrer: "http://localhost/api/add-api"
+2016/04/14 17:49:41 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+POST /apis?upstream_url=http://localhost:3232&request_path=/api/v1/uam/3232 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/14 17:49:41 [info] 30748#0: *20 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/add-api"
+2016/04/14 17:49:41 [debug] 30748#0: *20 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
