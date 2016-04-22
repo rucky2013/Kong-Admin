@@ -12,7 +12,7 @@
 
 # 运行
 
-1. 首先安装好 oepnResty。
+1. 首先安装好 oepnResty，由于有登录的功能，所以需要安装 Redis，帐号密码自己设置，代码没有做加密。
 2. 加入 [lua-resty-http](https://github.com/pintsized/lua-resty-http) 和 [lua-resty-template](https://github.com/bungle/lua-resty-template) 的支持。即把对应的 lua 文件加入到 /openresty/lualib/resty 中即可。
 3. 使用 conf 目录下的 nginx.conf ，即跑 nginx 的时候指定该文件。指定好目录，例如： `./nginx -p /Users/yunxin/githubProject/myPro/Kong-Admin -c /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf`
 
@@ -33,6 +33,7 @@ PS：
 - cjson
 - http
 - template
+- redis
 
 
 
