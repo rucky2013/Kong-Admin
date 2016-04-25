@@ -7,7 +7,8 @@ RUN yum -y install pcre-devel && yum -y install openssl-devel && yum -y install 
 RUN mkdir /opt/openResty/ && cd /opt/openresty-1.9.7.4 && ./configure --prefix=/opt/openResty/ && make && make install
 
 # exec kong-admin
-ADD ./ /opt/Kong-Admin/
+ADD ./ /opt/Kong-Admin/ 
+RUN cp /opt/Kong-Admin/import/* /opt/openResty/lualib/resty
 CMD cd /opt/openResty/nginx/sbin && ./nginx -p /opt/Kong-Admin -c /opt/Kong-Admin/conf/nginx.conf && tail -f /opt/Kong-Admin/logs/error.log
 
 
