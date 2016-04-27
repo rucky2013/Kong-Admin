@@ -96,7 +96,7 @@ local function handleDoAddApi()
     if id == nil then 
         res,err = httpc:request_uri("http://" .. kong .. ":8001/apis", {
             method = "POST",
-            data = "upstream_url=" .. upstream_url .. "&request_path=" .. request_path,
+            body = "upstream_url=" .. upstream_url .. "&request_path=" .. request_path,
 	    headers = {
                 ["Content-Type"] = "application/x-www-form-urlencoded"
             }
