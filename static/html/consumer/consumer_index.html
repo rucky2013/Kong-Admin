@@ -1,0 +1,32 @@
+{(consumer/common/header.html)}
+    <div>
+        <h3>API列表</h3>
+        <table class = "table table-striped">
+            <thead>
+                <td>custom_id</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>username</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>id</td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td>Operation1</td>
+                <td>Operation2</td>
+            </thead>
+            <tbody>
+                {% for _,item in pairs(items) do %}
+                <tr>
+                    <td>{{item.custom_id}}</td>
+                    <td></td>
+                    <td>{{item.username}}</td>
+                    <td></td>
+                    <td>{{item.id}}</td>
+                    <td></td>
+                    <td><a href = "/consumer/update?id={{item.id}}&username={{item.username}}&custom_id={{item.custom_id}}">Update</a></td>
+                    <td><a href = "/consumer/delete?id={{item.id}}">Delete</a></td>
+
+                </tr>
+                {% end  %}
+            </tbody>
+        </table>
+    </div>
+{(consumer/common/footer.html)}

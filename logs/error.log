@@ -493,3 +493,1005 @@ Host: 127.0.0.1
 User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
 
 
+2016/04/29 11:03:56 [alert] 58881#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:03:56 [emerg] 58881#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2016/04/29 11:04:06 [alert] 58895#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:04:06 [notice] 58895#0: using the "kqueue" event method
+2016/04/29 11:04:06 [notice] 58895#0: openresty/1.9.7.4
+2016/04/29 11:04:06 [notice] 58895#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/29 11:04:06 [notice] 58895#0: OS: Darwin 14.5.0
+2016/04/29 11:04:06 [notice] 58895#0: hw.ncpu: 8
+2016/04/29 11:04:06 [notice] 58895#0: net.inet.tcp.sendspace: 131072
+2016/04/29 11:04:06 [notice] 58895#0: kern.ipc.somaxconn: 128
+2016/04/29 11:04:06 [notice] 58895#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/29 11:04:06 [notice] 58896#0: start worker processes
+2016/04/29 11:04:06 [notice] 58896#0: start worker process 58897
+2016/04/29 11:04:10 [error] 58897#0: *1 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:04:54 [alert] 59022#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:04:54 [notice] 59022#0: signal process started
+2016/04/29 11:04:54 [notice] 58896#0: signal 15 (SIGTERM) received, exiting
+2016/04/29 11:04:54 [notice] 58897#0: exiting
+2016/04/29 11:04:54 [notice] 58896#0: signal 23 (SIGIO) received
+2016/04/29 11:04:54 [notice] 58897#0: exit
+2016/04/29 11:04:54 [notice] 58896#0: signal 20 (SIGCHLD) received
+2016/04/29 11:04:54 [notice] 58896#0: worker process 58897 exited with code 0
+2016/04/29 11:04:54 [notice] 58896#0: exit
+2016/04/29 11:20:00 [alert] 60548#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:20:00 [notice] 60548#0: using the "kqueue" event method
+2016/04/29 11:20:00 [notice] 60548#0: openresty/1.9.7.4
+2016/04/29 11:20:00 [notice] 60548#0: built by clang 7.0.0 (clang-700.0.72)
+2016/04/29 11:20:00 [notice] 60548#0: OS: Darwin 14.5.0
+2016/04/29 11:20:00 [notice] 60548#0: hw.ncpu: 8
+2016/04/29 11:20:00 [notice] 60548#0: net.inet.tcp.sendspace: 131072
+2016/04/29 11:20:00 [notice] 60548#0: kern.ipc.somaxconn: 128
+2016/04/29 11:20:00 [notice] 60548#0: getrlimit(RLIMIT_NOFILE): 2560:9223372036854775807
+2016/04/29 11:20:00 [notice] 60549#0: start worker processes
+2016/04/29 11:20:00 [notice] 60549#0: start worker process 60550
+2016/04/29 11:20:09 [error] 60550#0: *1 lua entry thread aborted: runtime error: /Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1: module 'resty.http' not found:
+	no field package.preload['resty.http']
+	no file '/opt/lualib/resty/http.lua'
+	no file '/opt/lualib/resty/http/init.lua'
+	no file './resty/http.lua'
+	no file '/opt/luajit/share/luajit-2.1.0-beta1/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http/init.lua'
+	no file '/opt/luajit/share/lua/5.1/resty/http.lua'
+	no file '/opt/luajit/share/lua/5.1/resty/http/init.lua'
+	no file '/opt/lualib/resty/http.so'
+	no file './resty/http.so'
+	no file '/usr/local/lib/lua/5.1/resty/http.so'
+	no file '/opt/luajit/lib/lua/5.1/resty/http.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/opt/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/opt/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1: in function </Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:20:09 [error] 60550#0: *1 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:21:05 [info] 60550#0: *2 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:21:05 [info] 60550#0: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:23:03 [error] 60550#0: *4 lua entry thread aborted: runtime error: /Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1: module 'resty.http' not found:
+	no field package.preload['resty.http']
+	no file '/opt/lualib/resty/http.lua'
+	no file '/opt/lualib/resty/http/init.lua'
+	no file './resty/http.lua'
+	no file '/opt/luajit/share/luajit-2.1.0-beta1/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http.lua'
+	no file '/usr/local/share/lua/5.1/resty/http/init.lua'
+	no file '/opt/luajit/share/lua/5.1/resty/http.lua'
+	no file '/opt/luajit/share/lua/5.1/resty/http/init.lua'
+	no file '/opt/lualib/resty/http.so'
+	no file './resty/http.so'
+	no file '/usr/local/lib/lua/5.1/resty/http.so'
+	no file '/opt/luajit/lib/lua/5.1/resty/http.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/opt/lualib/resty.so'
+	no file './resty.so'
+	no file '/usr/local/lib/lua/5.1/resty.so'
+	no file '/opt/luajit/lib/lua/5.1/resty.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1: in function </Users/yunxin/githubProject/myPro/Kong-Admin/lua/login.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:23:03 [error] 60550#0: *4 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:23:48 [alert] 61023#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:23:48 [notice] 61023#0: signal process started
+2016/04/29 11:23:48 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 11:23:48 [notice] 60549#0: reconfiguring
+2016/04/29 11:23:48 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:23:48 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 11:23:48 [notice] 60549#0: start worker processes
+2016/04/29 11:23:48 [notice] 60549#0: start worker process 61026
+2016/04/29 11:23:48 [notice] 60550#0: gracefully shutting down
+2016/04/29 11:23:48 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:23:48 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:23:51 [info] 60550#0: *5 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:23:51 [info] 60550#0: *6 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:23:51 [notice] 60550#0: exiting
+2016/04/29 11:23:51 [notice] 60550#0: exit
+2016/04/29 11:23:51 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 11:23:51 [notice] 60549#0: worker process 60550 exited with code 0
+2016/04/29 11:23:51 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:23:51 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:23:51 [info] 61026#0: *7 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:23:51 [debug] 61026#0: *7 [lua] login.lua:12: username =  password = 
+2016/04/29 11:23:52 [error] 61026#0: *8 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:23:52 [error] 61026#0: *8 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:23:52 [error] 61026#0: *8 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:23:53 [info] 61026#0: *8 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:23:53 [error] 61026#0: *8 lua entry thread aborted: runtime error: /Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:14: bad argument #1 to 'ipairs' (table expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'ipairs'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:14: in function 'GetAdd'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:20: in function </Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:23:53 [error] 61026#0: *8 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:25:32 [alert] 61198#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:25:32 [notice] 61198#0: signal process started
+2016/04/29 11:25:32 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 11:25:32 [notice] 60549#0: reconfiguring
+2016/04/29 11:25:32 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:25:32 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 11:25:32 [notice] 60549#0: start worker processes
+2016/04/29 11:25:32 [notice] 60549#0: start worker process 61200
+2016/04/29 11:25:32 [notice] 61026#0: gracefully shutting down
+2016/04/29 11:25:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:25:32 [notice] 61026#0: exiting
+2016/04/29 11:25:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:25:32 [notice] 61026#0: exit
+2016/04/29 11:25:32 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 11:25:32 [notice] 60549#0: worker process 61026 exited with code 0
+2016/04/29 11:25:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:25:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:25:34 [info] 61200#0: *13 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:25:34 [error] 61200#0: *13 [lua] api.lua:36: handleListApis(): request for get all apis http://localhost:8001/apis fail because of no res, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:25:34 [error] 61200#0: *13 lua entry thread aborted: runtime error: [string "context=... or {}..."]:9: attempt to index global 'res' (a nil value)
+stack traceback:
+coroutine 0:
+	[string "context=... or {}..."]: in main chunk
+	/opt/lualib/resty/template.lua:458: in function 'render'
+	/Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:142: in function </Users/yunxin/githubProject/myPro/Kong-Admin/lua/api.lua:1>, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:25:34 [error] 61200#0: *13 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:26:10 [alert] 61261#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:26:10 [notice] 61261#0: signal process started
+2016/04/29 11:26:10 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 11:26:10 [notice] 60549#0: reconfiguring
+2016/04/29 11:26:10 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:26:10 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 11:26:10 [notice] 60549#0: start worker processes
+2016/04/29 11:26:10 [notice] 60549#0: start worker process 61263
+2016/04/29 11:26:10 [notice] 61200#0: gracefully shutting down
+2016/04/29 11:26:10 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:26:10 [notice] 61200#0: exiting
+2016/04/29 11:26:10 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:26:10 [notice] 61200#0: exit
+2016/04/29 11:26:10 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 11:26:10 [notice] 60549#0: worker process 61200 exited with code 0
+2016/04/29 11:26:10 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:26:10 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:26:10 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:26:11 [info] 61263#0: *14 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:26:11 [debug] 61263#0: *14 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:12 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:12 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:12 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:19 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=2693845b-16d0-4193-c1b5-e11532eb1e93 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:19 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/2693845b-16d0-4193-c1b5-e11532eb1e93 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:19 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:19 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:19 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:19 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:19 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:19 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=b556b45e-7b4b-43f4-c313-1ac841f0a660 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:19 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/b556b45e-7b4b-43f4-c313-1ac841f0a660 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:20 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:20 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:20 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=9c3455ab-830f-44d6-c472-d018073b60b2 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:20 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/9c3455ab-830f-44d6-c472-d018073b60b2 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:20 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:20 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:20 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:21 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=23b7c6c4-4503-4792-c789-f42a0d53ab82 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:21 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/23b7c6c4-4503-4792-c789-f42a0d53ab82 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:21 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:21 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:21 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:21 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:21 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:22 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=56855c11-3fc7-4079-c043-437a053071f1 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:22 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/56855c11-3fc7-4079-c043-437a053071f1 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:22 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:22 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:22 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:22 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:22 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:23 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/delete, client: 127.0.0.1, server: localhost, request: "GET /api/delete?id=dd8cb214-635c-447c-c425-0bf983b63b36 HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:23 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+DELETE /apis/dd8cb214-635c-447c-c425-0bf983b63b36 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:23 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/list-apis"
+2016/04/29 11:26:23 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:23 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:23 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:23 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:34 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:34 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:34 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:36 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:36 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:36 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:37 [info] 61263#0: *16 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:26:37 [debug] 61263#0: *16 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:26:37 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:37 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:37 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:43 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:43 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:26:43 [error] 61263#0: *16 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:48:31 [alert] 63667#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:48:31 [notice] 63667#0: signal process started
+2016/04/29 11:48:31 [alert] 63667#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:48:40 [error] 61263#0: *35 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:48:40 [error] 61263#0: *35 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:48:40 [error] 61263#0: *35 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:48:42 [error] 61263#0: *35 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:48:54 [error] 61263#0: *35 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:50:50 [alert] 63845#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:50:50 [notice] 63845#0: signal process started
+2016/04/29 11:50:50 [alert] 63845#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:50:52 [error] 61263#0: *40 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:51:20 [alert] 63887#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:51:20 [notice] 63887#0: signal process started
+2016/04/29 11:51:20 [alert] 63887#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:51:24 [error] 61263#0: *40 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:52:20 [alert] 64125#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:52:20 [notice] 64125#0: signal process started
+2016/04/29 11:52:20 [alert] 64125#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:52:22 [error] 61263#0: *40 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:53:06 [alert] 64210#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:53:06 [notice] 64210#0: signal process started
+2016/04/29 11:53:06 [alert] 64210#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:53:20 [error] 61263#0: *40 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:53:25 [error] 61263#0: *40 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:55:37 [info] 61263#0: *41 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:55:37 [debug] 61263#0: *41 [lua] login.lua:12: username =  password = 
+2016/04/29 11:55:37 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:37 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:37 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:38 [info] 61263#0: *41 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:55:38 [debug] 61263#0: *41 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:55:38 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:38 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:38 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:40 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:40 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:55:40 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:56:09 [error] 61263#0: *41 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/consumer/list-consumers" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:57:01 [alert] 64565#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:57:01 [notice] 64565#0: signal process started
+2016/04/29 11:57:01 [alert] 64565#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:57:06 [alert] 64573#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:57:06 [notice] 64573#0: signal process started
+2016/04/29 11:57:06 [alert] 64573#0: kill(60549, 1) failed (1: Operation not permitted)
+2016/04/29 11:57:18 [alert] 64590#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:57:18 [notice] 64590#0: signal process started
+2016/04/29 11:57:18 [alert] 64590#0: kill(60549, 15) failed (1: Operation not permitted)
+2016/04/29 11:57:28 [alert] 64622#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:57:28 [notice] 64622#0: signal process started
+2016/04/29 11:57:28 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 11:57:28 [notice] 60549#0: reconfiguring
+2016/04/29 11:57:28 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:57:28 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 11:57:28 [notice] 60549#0: start worker processes
+2016/04/29 11:57:28 [notice] 60549#0: start worker process 64624
+2016/04/29 11:57:28 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:57:28 [notice] 61263#0: gracefully shutting down
+2016/04/29 11:57:28 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:57:28 [notice] 61263#0: exiting
+2016/04/29 11:57:28 [notice] 61263#0: exit
+2016/04/29 11:57:28 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 11:57:28 [notice] 60549#0: worker process 61263 exited with code 0
+2016/04/29 11:57:28 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:57:28 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:57:33 [info] 64624#0: *43 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:57:33 [debug] 64624#0: *43 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:57:34 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:34 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:34 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:38 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:38 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:38 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:39 [info] 64624#0: *44 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:57:39 [debug] 64624#0: *44 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:57:40 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:40 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:57:40 [error] 64624#0: *44 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:35 [alert] 64737#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:58:35 [notice] 64737#0: signal process started
+2016/04/29 11:58:35 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 11:58:35 [notice] 60549#0: reconfiguring
+2016/04/29 11:58:35 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 11:58:35 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 11:58:35 [notice] 60549#0: start worker processes
+2016/04/29 11:58:35 [notice] 60549#0: start worker process 64739
+2016/04/29 11:58:35 [notice] 64624#0: gracefully shutting down
+2016/04/29 11:58:35 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:58:35 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:58:35 [notice] 64624#0: exiting
+2016/04/29 11:58:35 [notice] 64624#0: exit
+2016/04/29 11:58:35 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 11:58:35 [notice] 60549#0: worker process 64624 exited with code 0
+2016/04/29 11:58:35 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:58:35 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 11:58:45 [info] 64739#0: *51 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 11:58:45 [debug] 64739#0: *51 [lua] login.lua:12: username =  password = 
+2016/04/29 11:58:45 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:45 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:45 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:47 [info] 64739#0: *51 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:58:47 [debug] 64739#0: *51 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:58:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:58:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:39 [info] 64739#0: *52 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:59:39 [info] 64739#0: *53 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:59:39 [info] 64739#0: *54 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 11:59:47 [info] 64739#0: *51 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:59:47 [debug] 64739#0: *51 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:59:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:47 [error] 64739#0: *51 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:50 [info] 64739#0: *51 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 11:59:50 [debug] 64739#0: *51 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:59:51 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:51 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:51 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:53 [info] 64739#0: *58 [lua] api.lua:7: uri = /api/add-api, client: 127.0.0.1, server: localhost, request: "GET /api/add-api HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 11:59:53 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:53 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:53 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:55 [info] 64739#0: *58 [lua] api.lua:7: uri = /api/list-apis, client: 127.0.0.1, server: localhost, request: "GET /api/list-apis HTTP/1.1", host: "localhost", referrer: "http://localhost/api/add-api"
+2016/04/29 11:59:55 [debug] 64739#0: *58 [lua] http.lua:542: send_request(): 
+GET /apis/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 11:59:55 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:55 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 11:59:55 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:48 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:48 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:48 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:50 [info] 64739#0: *58 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:00:50 [debug] 64739#0: *58 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:00:50 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:50 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:00:50 [error] 64739#0: *58 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:21 [info] 64739#0: *58 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:01:21 [debug] 64739#0: *58 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:01:21 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:21 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:21 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:26 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:26 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:26 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:28 [info] 64739#0: *65 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:01:28 [debug] 64739#0: *65 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:01:28 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:28 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:01:28 [error] 64739#0: *65 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:34 [alert] 68361#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:44:34 [notice] 68361#0: signal process started
+2016/04/29 12:44:34 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 12:44:34 [notice] 60549#0: reconfiguring
+2016/04/29 12:44:34 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:44:34 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 12:44:34 [notice] 60549#0: start worker processes
+2016/04/29 12:44:34 [notice] 60549#0: start worker process 68363
+2016/04/29 12:44:34 [notice] 64739#0: gracefully shutting down
+2016/04/29 12:44:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:44:34 [notice] 64739#0: exiting
+2016/04/29 12:44:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:44:34 [notice] 64739#0: exit
+2016/04/29 12:44:34 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 12:44:34 [notice] 60549#0: worker process 64739 exited with code 0
+2016/04/29 12:44:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:44:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:44:36 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:36 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:36 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:38 [info] 68363#0: *72 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:44:38 [debug] 68363#0: *72 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:44:38 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:38 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:38 [error] 68363#0: *72 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:44:39 [info] 68363#0: *72 [lua] consumer.lua:7: uri = /consumer/delete, client: 127.0.0.1, server: localhost, request: "GET /consumer/delete?id=214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 12:46:32 [alert] 68539#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:46:32 [notice] 68539#0: signal process started
+2016/04/29 12:46:32 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 12:46:32 [notice] 60549#0: reconfiguring
+2016/04/29 12:46:32 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:46:32 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 12:46:32 [notice] 60549#0: start worker processes
+2016/04/29 12:46:32 [notice] 60549#0: start worker process 68541
+2016/04/29 12:46:32 [notice] 68363#0: gracefully shutting down
+2016/04/29 12:46:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:46:32 [notice] 68363#0: exiting
+2016/04/29 12:46:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:46:32 [notice] 68363#0: exit
+2016/04/29 12:46:32 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 12:46:32 [notice] 60549#0: worker process 68363 exited with code 0
+2016/04/29 12:46:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:46:32 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:46:37 [info] 68541#0: *74 [lua] consumer.lua:7: uri = /consumer/, client: 127.0.0.1, server: localhost, request: "GET /consumer/ HTTP/1.1", host: "localhost"
+2016/04/29 12:46:44 [info] 68541#0: *74 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 12:46:44 [debug] 68541#0: *74 [lua] login.lua:12: username =  password = 
+2016/04/29 12:46:44 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:44 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:44 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:45 [info] 68541#0: *74 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:46:45 [debug] 68541#0: *74 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:46:45 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:45 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:45 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:47 [info] 68541#0: *74 [lua] consumer.lua:7: uri = /consumer/delete, client: 127.0.0.1, server: localhost, request: "GET /consumer/delete?id=214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 12:46:47 [debug] 68541#0: *74 [lua] http.lua:542: send_request(): 
+DELETE /consumer/214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:46:47 [error] 68541#0: *74 [lua] consumer.lua:63: handleDeleteConsumer(): request for delete  http://localhost:8001/consumers fail because of res.status != 200, client: 127.0.0.1, server: localhost, request: "GET /consumer/delete?id=214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 12:46:47 [info] 68541#0: *75 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:46:47 [info] 68541#0: *76 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:46:47 [info] 68541#0: *77 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:46:47 [info] 68541#0: *78 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:46:47 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:47 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:46:47 [error] 68541#0: *74 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:38 [alert] 68641#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:47:38 [notice] 68641#0: signal process started
+2016/04/29 12:47:38 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 12:47:38 [notice] 60549#0: reconfiguring
+2016/04/29 12:47:38 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:47:38 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 12:47:38 [notice] 60549#0: start worker processes
+2016/04/29 12:47:38 [notice] 60549#0: start worker process 68643
+2016/04/29 12:47:38 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:47:38 [notice] 68541#0: gracefully shutting down
+2016/04/29 12:47:38 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:47:38 [notice] 68541#0: exiting
+2016/04/29 12:47:38 [notice] 68541#0: exit
+2016/04/29 12:47:38 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 12:47:38 [notice] 60549#0: worker process 68541 exited with code 0
+2016/04/29 12:47:38 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:47:38 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:47:48 [info] 68643#0: *81 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 12:47:48 [debug] 68643#0: *81 [lua] login.lua:12: username =  password = 
+2016/04/29 12:47:48 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:48 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:48 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:49 [info] 68643#0: *81 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 12:47:49 [debug] 68643#0: *81 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:47:49 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:49 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:49 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:50 [info] 68643#0: *81 [lua] consumer.lua:7: uri = /consumer/delete, client: 127.0.0.1, server: localhost, request: "GET /consumer/delete?id=214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 12:47:50 [debug] 68643#0: *81 [lua] http.lua:542: send_request(): 
+DELETE /consumers/214c713b-d550-4a05-ca5f-7b4417e52e4d HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:47:50 [info] 68643#0: *81 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 12:47:50 [debug] 68643#0: *81 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 12:47:50 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:50 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:47:50 [error] 68643#0: *81 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 12:48:30 [info] 68643#0: *82 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:48:30 [info] 68643#0: *83 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:48:30 [info] 68643#0: *84 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:48:30 [info] 68643#0: *85 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:48:30 [info] 68643#0: *86 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 12:59:57 [alert] 69733#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:59:57 [notice] 69733#0: signal process started
+2016/04/29 12:59:57 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 12:59:57 [notice] 60549#0: reconfiguring
+2016/04/29 12:59:57 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 12:59:57 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 12:59:57 [notice] 60549#0: start worker processes
+2016/04/29 12:59:57 [notice] 60549#0: start worker process 69735
+2016/04/29 12:59:57 [notice] 68643#0: gracefully shutting down
+2016/04/29 12:59:57 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:59:57 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:59:57 [notice] 68643#0: exiting
+2016/04/29 12:59:57 [notice] 68643#0: exit
+2016/04/29 12:59:57 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 12:59:57 [notice] 60549#0: worker process 68643 exited with code 0
+2016/04/29 12:59:57 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 12:59:57 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:00:03 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:03 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:03 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:04 [info] 69735#0: *90 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:00:04 [debug] 69735#0: *90 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:00:05 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:05 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:05 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:06 [info] 69735#0: *90 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:00:06 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:06 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:06 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:00:11 [info] 69735#0: *90 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:00:11 [error] 69735#0: *90 lua entry thread aborted: runtime error: ...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:171: attempt to call global 'handleDoAddConsumer' (a nil value)
+stack traceback:
+coroutine 0:
+	...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua: in function <...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:00:11 [error] 69735#0: *90 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:01:45 [alert] 69888#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:01:45 [notice] 69888#0: signal process started
+2016/04/29 13:01:45 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 13:01:45 [notice] 60549#0: reconfiguring
+2016/04/29 13:01:45 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:01:45 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 13:01:45 [notice] 60549#0: start worker processes
+2016/04/29 13:01:45 [notice] 60549#0: start worker process 69890
+2016/04/29 13:01:45 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:01:45 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:01:45 [notice] 69735#0: gracefully shutting down
+2016/04/29 13:01:45 [notice] 69735#0: exiting
+2016/04/29 13:01:45 [notice] 69735#0: exit
+2016/04/29 13:01:45 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 13:01:45 [notice] 60549#0: worker process 69735 exited with code 0
+2016/04/29 13:01:45 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:01:45 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:01:53 [info] 69890#0: *92 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 13:01:53 [debug] 69890#0: *92 [lua] login.lua:12: username =  password = 
+2016/04/29 13:01:53 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:53 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:53 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:54 [info] 69890#0: *92 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:01:54 [debug] 69890#0: *92 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:01:54 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:54 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:54 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:56 [info] 69890#0: *92 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:01:56 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:56 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:01:56 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:03 [info] 69890#0: *93 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:02:03 [info] 69890#0: *94 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:02:03 [info] 69890#0: *95 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:02:03 [info] 69890#0: *96 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:02:03 [info] 69890#0: *97 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:02:03 [info] 69890#0: *92 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:02:03 [error] 69890#0: *92 lua entry thread aborted: runtime error: ...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:171: attempt to call global 'handleDoAddConsumer' (a nil value)
+stack traceback:
+coroutine 0:
+	...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua: in function <...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:02:03 [error] 69890#0: *92 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:02:42 [alert] 69983#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:02:42 [notice] 69983#0: signal process started
+2016/04/29 13:02:42 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 13:02:42 [notice] 60549#0: reconfiguring
+2016/04/29 13:02:42 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:02:42 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 13:02:42 [notice] 60549#0: start worker processes
+2016/04/29 13:02:42 [notice] 60549#0: start worker process 69985
+2016/04/29 13:02:42 [notice] 69890#0: gracefully shutting down
+2016/04/29 13:02:42 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:02:42 [notice] 69890#0: exiting
+2016/04/29 13:02:42 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:02:42 [notice] 69890#0: exit
+2016/04/29 13:02:42 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 13:02:42 [notice] 60549#0: worker process 69890 exited with code 0
+2016/04/29 13:02:42 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:02:42 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:02:50 [info] 69985#0: *99 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 13:02:50 [debug] 69985#0: *99 [lua] login.lua:12: username =  password = 
+2016/04/29 13:02:50 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:50 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:50 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:51 [info] 69985#0: *99 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:02:51 [debug] 69985#0: *99 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:02:52 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:52 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:52 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:53 [info] 69985#0: *99 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:02:53 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:53 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:02:53 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:03:00 [info] 69985#0: *100 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:03:00 [info] 69985#0: *101 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:03:00 [info] 69985#0: *102 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:03:00 [info] 69985#0: *103 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:03:00 [info] 69985#0: *104 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:03:00 [info] 69985#0: *99 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:03:00 [error] 69985#0: *99 lua entry thread aborted: runtime error: ...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:171: attempt to call global 'handleDoAddConsumer' (a nil value)
+stack traceback:
+coroutine 0:
+	...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua: in function <...s/yunxin/githubProject/myPro/Kong-Admin/lua/consumer.lua:1>, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:03:00 [error] 69985#0: *99 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:05:00 [info] 69985#0: *106 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 13:05:00 [debug] 69985#0: *106 [lua] login.lua:12: username =  password = 
+2016/04/29 13:05:00 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:00 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:00 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:01 [info] 69985#0: *106 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:05:01 [debug] 69985#0: *106 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:05:01 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:01 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:01 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:02 [info] 69985#0: *106 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:05:02 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:02 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:02 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:08 [info] 69985#0: *107 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:05:08 [info] 69985#0: *108 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:05:08 [info] 69985#0: *109 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:05:08 [info] 69985#0: *110 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:05:08 [info] 69985#0: *111 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:05:08 [info] 69985#0: *106 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:05:08 [debug] 69985#0: *106 [lua] http.lua:542: send_request(): 
+POST /customers HTTP/1.1
+Content-Length: 35
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:05:08 [error] 69985#0: *106 [lua] consumer.lua:122: handleDoAddConsumer(): request for save/update a new customer http://localhost:8001/customers fail because of res.status != 200, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:05:08 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:08 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:08 [error] 69985#0: *106 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:34 [alert] 70216#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:05:34 [notice] 70216#0: signal process started
+2016/04/29 13:05:34 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 13:05:34 [notice] 60549#0: reconfiguring
+2016/04/29 13:05:34 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:05:34 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 13:05:34 [notice] 60549#0: start worker processes
+2016/04/29 13:05:34 [notice] 60549#0: start worker process 70218
+2016/04/29 13:05:34 [notice] 69985#0: gracefully shutting down
+2016/04/29 13:05:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:05:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:05:34 [notice] 69985#0: exiting
+2016/04/29 13:05:34 [notice] 69985#0: exit
+2016/04/29 13:05:34 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 13:05:34 [notice] 60549#0: worker process 69985 exited with code 0
+2016/04/29 13:05:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:05:34 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:05:43 [info] 70218#0: *114 [lua] login.lua:5: uri = /login/, client: 127.0.0.1, server: localhost, request: "POST /login/ HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2016/04/29 13:05:43 [debug] 70218#0: *114 [lua] login.lua:12: username =  password = 
+2016/04/29 13:05:43 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:43 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:43 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:45 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:05:45 [debug] 70218#0: *114 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:05:45 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:45 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:45 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:47 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:05:47 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:47 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:05:47 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:11 [info] 70218#0: *115 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:06:11 [info] 70218#0: *116 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:06:11 [info] 70218#0: *117 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:06:11 [info] 70218#0: *118 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:06:11 [info] 70218#0: *119 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2016/04/29 13:06:11 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:06:11 [debug] 70218#0: *114 [lua] http.lua:542: send_request(): 
+POST /consumers HTTP/1.1
+Content-Length: 35
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:06:11 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:06:11 [debug] 70218#0: *114 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:06:11 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:11 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:11 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:14 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/update, client: 127.0.0.1, server: localhost, request: "GET /consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:06:14 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:14 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:14 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:16 [info] 70218#0: *114 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id"
+2016/04/29 13:06:16 [debug] 70218#0: *114 [lua] http.lua:542: send_request(): 
+PATCH /customers/9bd4b20a-2c20-4c6c-aff1-3da69a877a54 HTTP/1.1
+Content-Length: 36
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:06:16 [error] 70218#0: *114 [lua] consumer.lua:122: handleDoAddConsumer(): request for save/update a new customer http://localhost:8001/customers fail because of res.status != 200, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id"
+2016/04/29 13:06:16 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:16 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:16 [error] 70218#0: *114 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:56 [alert] 70343#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:06:56 [notice] 70343#0: signal process started
+2016/04/29 13:06:56 [notice] 60549#0: signal 1 (SIGHUP) received, reconfiguring
+2016/04/29 13:06:56 [notice] 60549#0: reconfiguring
+2016/04/29 13:06:56 [alert] 60549#0: lua_code_cache is off; this will hurt performance in /Users/yunxin/githubProject/myPro/Kong-Admin/conf/nginx.conf:19
+2016/04/29 13:06:56 [notice] 60549#0: using the "kqueue" event method
+2016/04/29 13:06:56 [notice] 60549#0: start worker processes
+2016/04/29 13:06:56 [notice] 60549#0: start worker process 70345
+2016/04/29 13:06:56 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:06:56 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:06:56 [notice] 70218#0: gracefully shutting down
+2016/04/29 13:06:56 [notice] 70218#0: exiting
+2016/04/29 13:06:56 [notice] 70218#0: exit
+2016/04/29 13:06:56 [notice] 60549#0: signal 20 (SIGCHLD) received
+2016/04/29 13:06:56 [notice] 60549#0: worker process 70218 exited with code 0
+2016/04/29 13:06:56 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:06:56 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:06:56 [notice] 60549#0: signal 23 (SIGIO) received
+2016/04/29 13:06:58 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:58 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:06:58 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:07 [info] 70345#0: *124 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/index/"
+2016/04/29 13:07:07 [debug] 70345#0: *124 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:07:07 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:07 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:07 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:09 [info] 70345#0: *124 [lua] consumer.lua:7: uri = /consumer/update, client: 127.0.0.1, server: localhost, request: "GET /consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:07:09 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:09 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:07:09 [error] 70345#0: *124 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:19 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id"
+2016/04/29 13:08:19 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+PATCH /consumers/9bd4b20a-2c20-4c6c-aff1-3da69a877a54 HTTP/1.1
+Content-Length: 36
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:08:19 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54&username=ziguan&custom_id=ziguan_id"
+2016/04/29 13:08:19 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:19 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:19 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:19 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:24 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/delete, client: 127.0.0.1, server: localhost, request: "GET /consumer/delete?id=9bd4b20a-2c20-4c6c-aff1-3da69a877a54 HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:08:24 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+DELETE /consumers/9bd4b20a-2c20-4c6c-aff1-3da69a877a54 HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:24 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:08:24 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:25 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:25 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:25 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:25 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/add-consumer, client: 127.0.0.1, server: localhost, request: "GET /consumer/add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:08:25 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:26 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:26 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:33 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:08:33 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+POST /consumers HTTP/1.1
+Content-Length: 29
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:08:33 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/add-consumer"
+2016/04/29 13:08:33 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:33 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:33 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:33 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:35 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/update, client: 127.0.0.1, server: localhost, request: "GET /consumer/update?id=b51d2f23-6a8e-48ef-bc20-0d55d0f1ec2d&username=whc&custom_id=whc_id HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:08:35 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:35 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:35 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:37 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/do-add-consumer, client: 127.0.0.1, server: localhost, request: "POST /consumer/do-add-consumer HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=b51d2f23-6a8e-48ef-bc20-0d55d0f1ec2d&username=whc&custom_id=whc_id"
+2016/04/29 13:08:37 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+PATCH /consumers/b51d2f23-6a8e-48ef-bc20-0d55d0f1ec2d HTTP/1.1
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+Host: 127.0.0.1
+
+
+2016/04/29 13:08:37 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/update?id=b51d2f23-6a8e-48ef-bc20-0d55d0f1ec2d&username=whc&custom_id=whc_id"
+2016/04/29 13:08:37 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:37 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:37 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:37 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:41 [info] 70345#0: *126 [lua] consumer.lua:7: uri = /consumer/list-consumers, client: 127.0.0.1, server: localhost, request: "GET /consumer/list-consumers HTTP/1.1", host: "localhost", referrer: "http://localhost/consumer/list-consumers"
+2016/04/29 13:08:41 [debug] 70345#0: *126 [lua] http.lua:542: send_request(): 
+GET /consumers/ HTTP/1.1
+Host: 127.0.0.1
+User-Agent: lua-resty-http/0.07 (Lua) ngx_lua/10001
+
+
+2016/04/29 13:08:42 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:42 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:42 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:43 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff2" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff2?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:43 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.woff" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.woff?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"
+2016/04/29 13:08:43 [error] 70345#0: *126 open() "/Users/yunxin/githubProject/myPro/Kong-Admin/static/html/fonts/fontawesome-webfont.ttf" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /fonts/fontawesome-webfont.ttf?v=4.4.0 HTTP/1.1", host: "localhost", referrer: "http://localhost/stylesheets/font-awesome.min.css"

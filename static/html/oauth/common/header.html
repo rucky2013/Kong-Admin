@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Allen - Kong DashBoard</title>
+        
+        <link rel = "stylesheet" href = "../../../stylesheets/bootstrap.min.css">
+        <link rel = "stylesheet" href = "../../../stylesheets/style.css">
+        <script src = "../../../javascripts/jquery.min.js" ></script>
+
+        <link rel="stylesheet" href="../../../stylesheets/animate.css">
+        <link rel="stylesheet" href="../../../stylesheets/magnific-popup.css">
+        <link rel="stylesheet" href="../../../stylesheets/mediaelementplayer.css">
+        <link rel="stylesheet" id="color-scheme" href="../../../stylesheets/colors/green.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/allenicon.ico" media="screen" />
+        <script src = "../../../javascripts/modernizr.js" ></script>
+
+        <style type = "text/css">
+            .table tbody > tr > td {
+                padding:0;
+            }
+            .table>thead>tr>td {
+                padding:0;
+            }
+            .table tbody > tr > td:first-child {
+                padding:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "wrapper" stype = "background-color:#f6f6f6">
+            <div id = "content" role = "main">
+                <div class="page-header larger larger-desc" style="background-color:#f6f6f6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1><a href = "/index/">Kong Dashboard</a> <small class="hidden-xs"></small></h1>
+                                <p class="page-header-desc">A web ui for Kong !</p>
+                            </div>
+                            <div class="col-md-6">
+                                <ol class="breadcrumb">
+                                    {{dataPath}}
+                                    <!--<li><a href="/">Index</a></li>-->
+                                    <!--<li class="active">Blog</li>-->
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class = "container">
+                    <div id = "row">
+                        <div class = "col-md-9 col-md-push-3">

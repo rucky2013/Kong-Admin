@@ -1,0 +1,11 @@
+
+{(consumer/common/header.html)}
+    <div>
+        <form action = "/consumer/do-add-consumer" method = "post">
+            <input type = "hidden" value= {{id}} name = "id">
+            username : <input type = "text" name = "username" name = "username" value = {{username}}> (例如：ziguan) <br/>
+            custom_id : <input type = "text" name = "custom_id" name = "custom_id" value = {{custom_id}}> (例如：ziguan_id) <br/>
+            <input type = "submit" class = "btn btn-primary btn-sm">
+        </form>
+    </div>
+{(consumer/common/footer.html)}
