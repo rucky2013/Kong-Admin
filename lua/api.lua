@@ -6,12 +6,25 @@ local httpc = http.new()
 local uri = ngx.var.uri
 ngx.log(ngx.INFO,"uri = ",uri )
 
+-- get  kong ip
+local socket = require "socket"
+function GetAdd(hostname)
+    local ip, resolved = socket.dns.toip(hostname)
+    local ListTab = {}
+    for k, v in ipairs(resolved.ip) do
+        table.insert(ListTab, v)
+    end
+    return ListTab
+end
+
+local kong = unpack(GetAdd('kong'))
+--print(unpack(GetAdd(socket.dns.gethostname())))
 
 
 
 local function handleListApis()
     
-    local res,err = httpc:request_uri("http://127.0.0.1:8001/apis/",{
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/",{
         method = "GET"
     })
 
@@ -36,7 +49,7 @@ local function handleDeleteApi()
     local param = ngx.req.get_uri_args();
     local id = param.id;
     
-    local res,err = httpc:request_uri("http://127.0.0.1:8001/apis/"..id,{
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/"..id,{
         method = "DELETE"
     })
     
@@ -81,11 +94,15 @@ local function handleDoAddApi()
     local res
     local err
     if id == nil then 
-        res,err = httpc:request_uri("http://127.0.0.1:8001/apis?upstream_url="..upstream_url.."&request_path="..request_path,{
-            method = "POST"
+        res,err = httpc:request_uri("http://" .. kong .. ":8001/apis", {
+            method = "POST",
+            body = "upstream_url=" .. upstream_url .. "&request_path=" .. request_path,
+	    headers = {
+                ["Content-Type"] = "application/x-www-form-urlencoded"
+            }
         })
     else
-        res,err = httpc:request_uri("http://127.0.0.1:8001/apis/"..id,{
+        res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/"..id,{
             method = "PATCH",
             body = "upstream_url="..upstream_url.."&request_path="..request_path,
             headers = {
