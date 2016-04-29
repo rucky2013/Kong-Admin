@@ -1,32 +1,68 @@
-{(api/common/header.html)}
+{(oauth/common/header.html)}
     <div>
-        <h3>API列表</h3>
-        <table class = "table table-striped">
-            <thead>
-                <td>upstream_url</td>
-                <td>&nbsp;&nbsp;&nbsp;</td>
-                <td>id</td>
-                <td>&nbsp;&nbsp;&nbsp;</td>
-                <td>request_path</td>
-                <td>&nbsp;&nbsp;&nbsp;</td>
-                <td>Operation1</td>
-                <td>Operation2</td>
-            </thead>
-            <tbody>
-                {% for _,item in pairs(items) do %}
-                <tr>
-                    <td>{{item.upstream_url}}</td>
-                    <td></td>
-                    <td>{{item.id}}</td>
-                    <td></td>
-                    <td>{{item.request_path}}</td>
-                    <td></td>
-                    <td><a href = "/api/update?id={{item.id}}&upstream_url={{item.upstream_url}}&request_path={{item.request_path}}">Update</a></td>
-                    <td><a href = "/api/delete?id={{item.id}}">Delete</a></td>
+        <h3>经过 OAuth 管理的 API 列表</h3>
 
-                </tr>
-                {% end  %}
+         <table class = "table table-striped">
+             <thead>
+                 <td>upstream_url</td>
+                 <td>request_path</td>
+                 <td>OAuth Mode</td>
+                 <td>Scope</td>
+                 <td>More</td>
+                 <td>Operation1</td>
+                 <td>Operation2</td>
+             </thead>
+            <tbody>
+                {% for i , item in pairs(oauthItems) do %}
+                    <td>{{item.upstream_url}}</td>
+                    <td>{{item.request_path}}</td>
+                    <td>
+                        {% if item.config.enable_authorization_code == true then %}
+                            authorization_code 
+                        {% end %}
+                        {% if item.config.enable_implicit_grant == true then %}
+                            implicit_grant
+                        {% end %}
+                        {% if item.config.enable_password_grant == true then %}
+                            password_grant
+                        {% end %}
+                        {% if item.config.enable_client_credentials == true then %}
+                            client_credentials
+                        {% end %}
+                    </td>
+                    <td>
+                        {% for  i, s in pairs({{item.config.scopes}}) do %}
+                          {{item.config.scopes[i]}},
+                        {% end %}
+                    </td>
+                    <td><a href = "">More</a></td>
+                    <td><a href = "">Update</a></td>
+                    <td><a href = "">Delete</a></td>
+                {% end %}
             </tbody>
         </table>
+        
+        <h3>尚未经过 OAuth 管理的 API 列表</h3>
+            
+            {% if table.getn(unOAuthApis) ~= 0 then %}
+            <table class = "table table-striped">
+                <thead>
+                    <td>upstream_url</td>
+                    <td>request_path</td>
+                    <td>Operation</td>
+                </thead>
+                <tbody>
+                    {% for i,item in pairs(unOAuthApis) do %}
+                        <td>{{item.upstream_url}}</td>
+                        <td>{{item.request_path}}</td>
+                        <td><a href = "">Add this api to oauth</a></td>
+                    {% end %}
+                </tbody>
+            </table>
+            {% end %}
+
+            {% if table.getn(unOAuthApis) == 0 then %}
+                暂无
+            {% end %}
     </div>
-{(api/common/footer.html)}
+{(oauth/common/footer.html)}
