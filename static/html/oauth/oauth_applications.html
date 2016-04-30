@@ -1,0 +1,61 @@
+{(oauth/common/header.html)}
+    <div>
+        <h3>OAuth Applications</h3>
+        
+        {% if consumersAndApplications ~= nil and table.getn(consumersAndApplications) ~= 0 then %}
+         <table class = "table table-striped">
+             <thead>
+                 <td>name</td>
+                 <td></td>
+                 <td>client_id</td>
+                 <td></td>
+                 <td>client_secret</td>
+                 <td></td>
+                 <td>More Info</td>
+             </thead>
+            <tbody>
+                {% for i , application in pairs(consumersAndApplications) do %}
+                {% if application.client_id ~= nil then %}
+                <tr>
+                    <td>{{application.name}}</td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td>{{application.client_id}}</td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td>{{application.client_secret}}</td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><a href = "javascript:void(0)" onclick = "getOAuthApplicationDetail('{{application.id}}')">More Info</a></td>
+                </tr>
+                {% end %}
+                {% end %}
+            </tbody>
+        </table>
+        {% end %}
+
+        {% if  consumersAndApplications ~= nil then %}
+        {% for i , application in pairs(consumersAndApplications) do %}
+        {% if application.client_id ~= nil then %}
+            <div class = "showOAuthApplicationDetail {{application.id}}" style = "display:none">
+                <h5>Detail:</h5>
+                <ul>
+                    <li>id：{{application.application_id}}</li>
+                    <li>client_id：{{application.client_id}}</li>
+                    <li>client_secret：{{application.client_secret}}</li>
+                    <li>redirect_uri：{{application.redirect_uri}}</li>
+                    <li>consumer_id：{{application.id}}</li>
+                    <li>consumer_username：{{application.username}}</li>
+                    <li>consumer_constom_id：{{application.custom_id}}</li>
+                </ul>
+            </div>
+        {% end %}
+        {% end %}
+        {% end %}
+
+        <script type = "text/javascript">
+            function getOAuthApplicationDetail(itemId) {
+                $(".showOAuthApplicationDetail").css("display","none");
+                $("."+itemId).css("display","block");
+            }
+        </script>
+    </div>
+{(oauth/common/footer.html)}
+

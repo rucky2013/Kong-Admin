@@ -1,0 +1,75 @@
+
+{(oauth/common/header.html)}
+    <div>
+        <form action = "/oauth/do-add-oauth" method = "post">
+            <input type = "hidden" value= {{id}} name = "id">
+            <table>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">name</td>
+                    <td><input type = "text" class = "form-control" name = "name" readonly = "readonly" value = "oauth"></td>
+                    <td></td>
+                </tr>
+                <tr style = "pdding-top:10px">
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">request_path</td>
+                    <td><input type = "text" class = "form-control" name = "request_path"  value = {{request_path}} readonly="readonly"></td>
+                    <td></td>
+                </tr>
+                <tr style = "padding-top:10px">
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">scopes</td>
+                    <td>
+                        <input type = "text" class = "form-control" name = "scopes">
+                    </td>
+                    <td style = "padding-bottom:25px;padding-left:10px" class = "text-left">如果多个，则逗号隔开，如 a,b,c</td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">OAuth Mode1</td>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">authorization_code:</td>
+                    <td style = "min-width:100px;">
+                        <select name = "authorization_code" class = "form-control">
+                            <option value = "true" selected="selected">true</option>
+                            <option value = "false">false</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">OAuth Mode2</td>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">implicit_grant:</td>
+                    <td style = "min-width:100px;">
+                        <select name = "implicit_grant" class = "form-control">
+                            <option value = "true">true</option>
+                            <option value = "false" selected="selected">false</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">OAuth Mode3</td>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">password_grant:</td>
+                    <td style = "min-width:100px;">
+                        <select name = "password_grant" class = "form-control">
+                            <option value = "true">true</option>
+                            <option value = "false" selected="selected">false</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">OAuth Mode4</td>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">client_credentials:</td>
+                    <td style = "min-width:100px;">
+                        <select name = "client_credentials" class = "form-control">
+                            <option value = "true">true</option>
+                            <option value = "false" selected="selected">false</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">token_expiration</td>
+                    <td><input type = "text" class = "form-control" name = "token_expiration"></td>
+                    <td style = "padding-bottom:25px;padding-left:10px" class = "text-left">单位：秒</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type = "submit" class = "btn btn-primary" class = "btn btn-primary btn-sm text-center" style = "width:100%"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+{(oauth/common/footer.html)}

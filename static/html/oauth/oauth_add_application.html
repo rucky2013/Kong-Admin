@@ -1,0 +1,45 @@
+
+{(oauth/common/header.html)}
+    <div>
+        <h3>Add OAuth Application:</h3>
+        <br/>
+        <form action = "/oauth/do-add-oauth-application" method = "post">
+            <input type = "hidden" value= {{id}} name = "id">
+            <table>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">consumer_name</td>
+                    <td style = "min-width:100px;">
+                        <select name = "consumer_id" class = "form-control">
+                            {% for i,consumer in pairs(consumers) do %}
+                                {% if i == 1 then %}
+                                    <option value = "{{consumer.id}}" selected="selected">{{consumer.username}}</option>
+                                {% else %}
+                                    <option value = "{{consumer.id}}">{{consumer.username}}</option>
+                                {% end %}
+                            {% end %}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">name</td>
+                    <td><input type = "text" class = "form-control" name = "name"></td>
+                </tr>
+                <tr style = "pdding-top:10px">
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">client_id</td>
+                    <td><input type = "text" class = "form-control" name = "client_id"></td>
+                </tr>
+                <tr style = "padding-top:10px">
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">client_secret</td>
+                    <td><input type = "text" class = "form-control" name = "client_secret"></td>
+                </tr>
+                <tr style = "padding-top:10px">
+                    <td style = "padding-bottom:25px;padding-right:10px" class = "text-right">redirect_uri</td>
+                    <td><input type = "text" class = "form-control" name = "redirect_uri"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type = "submit" class = "btn btn-primary" class = "btn btn-primary btn-sm text-center" style = "width:100%"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+{(oauth/common/footer.html)}

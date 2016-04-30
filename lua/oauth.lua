@@ -58,25 +58,25 @@ end
 
 
 
---[[local function handleDeleteApi()]]
+local function handleDeleteOAuth()
 
-    --local param = ngx.req.get_uri_args();
-    --local id = param.id;
+    local param = ngx.req.get_uri_args();
+    local id = param.id;
     
-    --local res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/"..id,{
-        --method = "DELETE"
-    --})
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/plugins/"..id,{
+        method = "DELETE"
+    })
     
-    --if not res then
-        --ngx.log(ngx.ERR,"request for delete http://localhost:8001/apis fail because of no res")
-        --return false,res,err
-    --elseif res.status ~= 204 then
-        --ngx.log(ngx.ERR,"request for delete  http://localhost:8001/apis fail because of res.status != 200")
-        --return false,res,err
-    --else
-        --return true,nil,nil
-    --end
---[[end]]
+    if not res then
+        ngx.log(ngx.ERR,"request for delete oauth http://localhost:8001/plugins fail because of no res")
+        return false,res,err
+    elseif res.status ~= 204 then
+        ngx.log(ngx.ERR,"request for delete oauth http://localhost:8001/plugins fail because of res.status != 204")
+        return false,res,err
+    else
+        return true,nil,nil
+    end
+end
 
 
 
@@ -97,48 +97,49 @@ end
 
 
 
---[[local function handleDoAddApi()]]
-    --ngx.req.read_body()
-    --local param = ngx.req.get_post_args();
+local function handleDoAddOAuth()
+    ngx.req.read_body()
+    local param = ngx.req.get_post_args();
     
-    --local id = param.id
-    --local upstream_url = param.upstream_url
-    --local request_path = param.request_path
+    local api_id = param.id
+    local name = "oauth2"
+    local scopes = param.scopes
+    local mandatory_scope = "true"
+    local enable_authorization_code = param.authorization_code
+    local enable_implicit_grant = param.implicit_grant
+    local enable_password_grant = param.password_grant
+    local enable_client_credentials = param.client_credentials
+    local token_expiration = param.token_expiration
 
-    --local res
-    --local err
-    --if id == nil then 
-        --res,err = httpc:request_uri("http://" .. kong .. ":8001/apis", {
-            --method = "POST",
-            --body = "upstream_url=" .. upstream_url .. "&request_path=" .. request_path,
-        --headers = {
-                --["Content-Type"] = "application/x-www-form-urlencoded"
-            --}
-        --})
-    --else
-        --res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/"..id,{
-            --method = "PATCH",
-            --body = "upstream_url="..upstream_url.."&request_path="..request_path,
-            --headers = {
-                --["Content-Type"] = "application/x-www-form-urlencoded"
-            --}
-        --})
-    --end
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/apis/"..api_id.."/plugins", {
+        method = "POST",
+        body = "name="..name..
+                "&config.scopes="..scopes..
+                "&config.mandatory_scope="..mandatory_scope..
+                "&config.enable_authorization_code="..enable_authorization_code..
+                "&config.enable_client_credentials="..enable_client_credentials..
+                "&config.enable_implicit_grant="..enable_implicit_grant..
+                "&config.enable_password_grant="..enable_password_grant..
+                "&config.token_expiration="..token_expiration,
+        headers = {
+                ["Content-Type"] = "application/x-www-form-urlencoded"
+            }
+    })
 
-    --if not res then
-        --ngx.log(ngx.ERR,"request for save/update a new api http://localhost:8001/apis fail because of no res,error = ",err)
-        --return false,res,err
-    --elseif res.status ~= 200 then
-        --if res.status ~= 201 then
-            --ngx.log(ngx.ERR,"request for save/update a new api http://localhost:8001/apis fail because of res.status != 200")
-            --return false,res,err
-        --else
-            --return true,nil,nil
-        --end
-    --else
-        --return true,nil,nil;
-    --end
---end
+    if not res then
+        ngx.log(ngx.ERR,"request for save a new oauth api http://localhost:8001/apis/../plugins fail because of no res,error = ",err)
+        return false,res,err
+    elseif res.status ~= 200 then
+        if res.status ~= 201 then
+            ngx.log(ngx.ERR,"request for save a new oauth api http://localhost:8001/apis/..plugins fail because of res.status != 200")
+            return false,res,err
+        else
+            return true,nil,nil
+        end
+    else
+        return true,nil,nil;
+    end
+end
 
 local function handleGetApiDetailByOAuth(oauthItems)
 
@@ -197,14 +198,19 @@ local function handleGetUnOAuthApis(oauthItems)
     local isSucceed,apis,res,err = handleGetAllApis()
 
     if isSucceed == true then
-        for i,api in pairs(apis) do
+        local i = 1
+        while i <= table.getn(apis) do
+            local api = apis[i]
             for j,oauthItem in pairs(oauthItems) do
-                if oauthItem.api_id == api.id then
-                    table.remove(apis, i)
+                if oauthItem.enabled == true and oauthItem.api_id == api.id then
+                    table.remove(apis,i)
+                    i = i - 1
                     break
                 end
             end
+            i = i + 1
         end
+
         return isSucceed,apis,res,err
     else
         return false,apis,res,err
@@ -214,14 +220,122 @@ end
 
 
 
+local function handlelGetAllConsumers()
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/consumers/",{
+        method = "GET"
+    })
+
+    local fData = {};
+    if not res then 
+        ngx.log(ngx.ERR,"request for get all consumers http://localhost:8001/consumers fail because of no res")
+        return false,nil,res,err
+    elseif res.status ~= 200 then
+        ngx.log(ngx.ERR,"request for get all consumers  http://localhost:8001/consumers fail because of res.status != 200")
+        return false,nil,res,err
+    else
+        fData = cjson.decode(res.body)
+    end
+
+    return true,fData.data,res,err
+end
+
+
+
+
+local function handleGetAllOAuthApplications()
+
+    -- get all applications by consumers
+    local isSucceed,consumers,res,err = handlelGetAllConsumers()
+
+    if isSucceed == false then
+        return false,nil,res,err
+    end
+
+    table.foreach(consumers,
+        function(i,consumer)
+            local res,err = httpc:request_uri("http://" .. kong .. ":8001/consumers/" .. consumer.id .. "/oauth2",{
+                method = "GET"
+            })
+            
+            if not res then 
+                ngx.log(ngx.ERR,"request for get oauthApplication detail http://localhost:8001/consumers/consumer_id/oauth2 fail because of no res")
+                return false,apiItems,res,err
+            elseif res.status ~= 200 then
+                ngx.log(ngx.ERR,"request for get oauthApplication detail http://localhost:8001/consumers/consumer_id/oauth2 fail because of res.status != 200")
+                return false,apiItems,res,err
+            else
+                local fData = cjson.decode(res.body)
+                local data = fData.data
+
+                if table.getn(data) ~= 0 then
+                    consumer.client_id = data[1].client_id
+                    consumer.client_secret = data[1].client_secret
+                    consumer.redirect_uri = data[1].redirect_uri
+                    consumer.name = data[1].name
+                    consumer.application_id = data[1].id
+                end
+            end
+        end
+    )
+
+    return true,consumers,nil,nil
+end
+
+
+
+
+local function handlelDoAddOAuthApplication()
+
+    ngx.req.read_body()
+    local param = ngx.req.get_post_args();
+    
+    local consumer_id= param.consumer_id
+    local name = param.name
+    local client_id = param.client_id
+    local client_secret = param.client_secret
+    local redirect_uri = param.redirect_uri
+
+    ngx.log(ngx.DEBUG,"consumer_id = ",consumer_id)
+    ngx.log(ngx.DEBUG,"name =",name)
+    ngx.log(ngx.DEBUG,"client_id = ",client_secret)
+    ngx.log(ngx.DEBUG,"client_secret = ",client_secret)
+    ngx.log(ngx.DEBUG,"redirect_uri = ",redirect_uri)
+
+    local res,err = httpc:request_uri("http://" .. kong .. ":8001/consumers/"..consumer_id.."/oauth2", {
+        method = "POST",
+        body = "name="..name..
+                "&client_id="..client_id..
+                "&client_secret="..client_secret..
+                "&redirect_uri="..redirect_uri,
+        headers = {
+                ["Content-Type"] = "application/x-www-form-urlencoded"
+            }
+    })
+    
+    if not res then
+        ngx.log(ngx.ERR,"request for add a new OAuth application http://localhost:8001/consumers/../oauth2 fail "..
+                    "because of no res,error = ",err)
+        return false,res,err
+    elseif res.status ~= 200 then
+        if res.status ~= 201 then
+            ngx.log(ngx.ERR,"request for add a new OAuth application http://localhost:8001/consumers/../oauth2 fail"..
+                " because of res.status != 200")
+            return false,res,err
+        else
+            return true,nil,nil
+        end
+    else
+        return true,nil,nil;
+    end
+end
+
+
+
 
 if uri == "/oauth/list-oauths" then
     local oauthSucceed,oauthItems,oauthRes,oauthErr = handleListOAuths()
     if oauthSucceed == true then
         local apiSucceed,oauthItems,apiRes,apiErr = handleGetApiDetailByOAuth(oauthItems)
-
-        ngx.log(ngx.DEBUG,oauthItems[1].config.scopes[1])
-
         if apiSucceed == true then
 
             local unApiSucceed,unOAuthApis,unRes,unErr = handleGetUnOAuthApis(oauthItems)
@@ -251,10 +365,10 @@ if uri == "/oauth/list-oauths" then
         })
     end
 
-elseif uri == '/api/delete' then
-    local isSucceed,res,err = handleDeleteApi()
+elseif uri == '/oauth/delete' then
+    local isSucceed,res,err = handleDeleteOAuth()
     if isSucceed  == true then 
-        ngx.redirect("/api/list-apis")
+        ngx.redirect("/oauth/list-oauths")
     else 
         template.render('error/error.html',{
              res = res,
@@ -262,8 +376,54 @@ elseif uri == '/api/delete' then
         })
     end
 
-elseif uri == '/api/add-api' then
-    template.render('api/api_add.html')
+elseif uri == '/oauth/add-oauth' then
+    
+    local param = ngx.req.get_uri_args();
+    local id = param.id;
+    local request_path = param.request_path;
+
+    template.render('oauth/oauth_add_api.html',{
+         id = id,
+         request_path = request_path
+    })
+
+elseif uri == '/oauth/list-oauthApplications' then
+    local isSucceed,consumersAndApplications,res,err = handleGetAllOAuthApplications()
+
+    if isSucceed == true then 
+        template.render('oauth/oauth_applications.html',{
+            consumersAndApplications = consumersAndApplications 
+        })
+    else 
+        template.render('error/error.html',{
+            res = res,
+            err = err
+        })
+    end
+
+elseif uri == '/oauth/add-oauthApplication' then
+    local isSucceed,consumers,res,err = handlelGetAllConsumers()
+    if isSucceed == true then 
+        template.render('oauth/oauth_add_application.html',{
+            consumers = consumers 
+        })
+    else 
+        template.render('error/error.html',{
+            res = res,
+            err = err
+        })
+    end
+
+elseif uri == '/oauth/do-add-oauth-application' then
+    local isSucceed,consumers,res,err = handlelDoAddOAuthApplication()
+    if isSucceed == true then 
+        ngx.redirect('/oauth/list-oauthApplications')
+    else 
+        template.render('error/error.html',{
+            res = res,
+            err = err
+        })
+    end
 
 elseif uri == '/api/update'  then
     local id,upstream_url,request_path = handleUpdateApi() 
@@ -273,11 +433,11 @@ elseif uri == '/api/update'  then
         request_path = request_path
     })
 
-elseif uri == '/api/do-add-api' then
-    local isSucceed,res,err = handleDoAddApi()
+elseif uri == '/oauth/do-add-oauth' then
+    local isSucceed,res,err = handleDoAddOAuth()
 
     if isSucceed == true then 
-        ngx.redirect("/api/list-apis")
+        ngx.redirect("/oauth/list-oauths")
     else 
         template.render('error/error.html',{
             res = res,

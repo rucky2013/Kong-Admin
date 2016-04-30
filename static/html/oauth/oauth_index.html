@@ -1,19 +1,21 @@
 {(oauth/common/header.html)}
     <div>
         <h3>经过 OAuth 管理的 API 列表</h3>
-
+        
+        {% if table.getn(oauthItems) ~= 0 then %}
          <table class = "table table-striped">
              <thead>
                  <td>upstream_url</td>
                  <td>request_path</td>
                  <td>OAuth Mode</td>
                  <td>Scope</td>
-                 <td>More</td>
-                 <td>Operation1</td>
-                 <td>Operation2</td>
+                 <td>More Info</td>
+                 <td>Operation</td>
              </thead>
             <tbody>
                 {% for i , item in pairs(oauthItems) do %}
+                    {% if item.enabled == true then %}
+                    <tr>
                     <td>{{item.upstream_url}}</td>
                     <td>{{item.request_path}}</td>
                     <td>
@@ -35,12 +37,61 @@
                           {{item.config.scopes[i]}},
                         {% end %}
                     </td>
-                    <td><a href = "">More</a></td>
-                    <td><a href = "">Update</a></td>
-                    <td><a href = "">Delete</a></td>
+                    <td><a href = "javascript:void(0)" onclick = "getOAuthItemDetail('{{item.id}}')">More Info</a></td>
+                    <td><a href = "/oauth/delete?id={{item.id}}">Delete</a></td>
+                    </tr>
+                    {% end %}
                 {% end %}
             </tbody>
         </table>
+        {% end %}
+        {% if table.getn(oauthItems) == 0 then %}
+            暂无
+        {% end %}
+
+        
+        {% for i , item in pairs(oauthItems) do %}
+            {% if item.enabled == true then %}
+            <div class = "showOAuthItemDetail {{item.id}}" style = "display:none">
+                <h5>Detail:</h5>
+                <ul>
+                    <li>upstream_url：{{item.upstream_url}}</li>
+                    <li>request_path：{{item.request_path}}</li>
+                    <li>OAuth Mode：
+                        {% if item.config.enable_authorization_code == true then %}
+                            authorization_code 
+                        {% end %}
+                        {% if item.config.enable_implicit_grant == true then %}
+                            implicit_grant
+                        {% end %}
+                        {% if item.config.enable_password_grant == true then %}
+                            password_grant
+                        {% end %}
+                        {% if item.config.enable_client_credentials == true then %}
+                            client_credentials
+                        {% end %}
+                    </li>
+                    <li>Scope：
+                        {% for  i, s in pairs({{item.config.scopes}}) do %}
+                          {{item.config.scopes[i]}},
+                        {% end %}
+                    </li>
+                    <li>api_id：{{item.api_id}}</li>
+                    <li>token_expiration：{{item.config.token_expiration}}</li>
+                    <li>provision_key：{{item.config.provision_key}}</li>
+                </ul>
+            </div>
+            {% end %}
+        {% end %}
+
+        <script type = "text/javascript">
+            function getOAuthItemDetail(itemId) {
+                $(".showOAuthItemDetail").css("display","none");
+                $("."+itemId).css("display","block");
+            }
+        </script>
+
+        <hr/>
         
         <h3>尚未经过 OAuth 管理的 API 列表</h3>
             
@@ -53,9 +104,11 @@
                 </thead>
                 <tbody>
                     {% for i,item in pairs(unOAuthApis) do %}
+                    <tr>
                         <td>{{item.upstream_url}}</td>
                         <td>{{item.request_path}}</td>
-                        <td><a href = "">Add this api to oauth</a></td>
+                        <td><a href = "/oauth/add-oauth?id={{item.id}}&request_path={{item.request_path}}">Add this api to oauth</a></td>
+                    </tr>
                     {% end %}
                 </tbody>
             </table>

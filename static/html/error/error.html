@@ -1,5 +1,11 @@
 {(api/common/header.html)}
 <p style = "color:red"><strong>Error occurs. Operation fail!!!</strong></p>
+
+{% if res ~= nil then %}
     <p>res.status = {{res.status}}</p>
     <p>res.body = {{res.body}}</p>
+{% else %}
+    <p> res == nil </p>
+{% end%}
+
 {(api/common/footer.html)}
