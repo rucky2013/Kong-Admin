@@ -7,20 +7,20 @@ local uri = ngx.var.uri
 ngx.log(ngx.INFO,"uri = ",uri )
 
 -- get  kong ip
---[[local socket = require "socket"]]
---function GetAdd(hostname)
-    --local ip, resolved = socket.dns.toip(hostname)
-    --local ListTab = {}
-    --for k, v in ipairs(resolved.ip) do
-        --table.insert(ListTab, v)
-    --end
-    --return ListTab
---end
+local socket = require "socket"
+function GetAdd(hostname)
+    local ip, resolved = socket.dns.toip(hostname)
+    local ListTab = {}
+    for k, v in ipairs(resolved.ip) do
+        table.insert(ListTab, v)
+    end
+    return ListTab
+end
 
---[[local kong = unpack(GetAdd('kong'))]]
---print(unpack(GetAdd(socket.dns.gethostname())))
+local kong = unpack(GetAdd('kong'))
+print(unpack(GetAdd(socket.dns.gethostname())))
 
-local kong =  "127.0.0.1"
+--local kong =  "127.0.0.1"
 
 
 
